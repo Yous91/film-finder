@@ -1,5 +1,5 @@
 // Search and display movie
-const SEARCH_URL = `http://www.omdbapi.com/?i=tt3896198&apikey=${apikey}`;
+const SEARCH_URL = `https://www.omdbapi.com/?i=tt3896198&apikey=${apikey}`;
 const show_movie = document.getElementById("displayMovies");
 
 
@@ -70,7 +70,7 @@ showMovie = (image, title, year, id) => {
 
 // Modal 
 seeMoreIsClicked = (image, title, year, id) => {
-    const DESCRIPTION_RESEARCH_URL = `http://www.omdbapi.com/?apikey=${apikey}&i=${id}`;
+    const DESCRIPTION_RESEARCH_URL = `https://www.omdbapi.com/?apikey=${apikey}&i=${id}`;
 
     fetch(DESCRIPTION_RESEARCH_URL)
         .then((response) => response.json())
